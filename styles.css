@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0;
+    background-color: #0f172a;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.background-aws {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://d1.awsstatic.com/logos/aws-logo-lockups/poweredbyaws/Powered-By-AWS-Logo-01-01.47e9e51c5b0e7e1e2dcfc18f50b5fddb9b7c2b7e.png') no-repeat center;
+    background-size: 60%;
+    opacity: 0.15;
+    z-index: -1;
+    filter: grayscale(100%);
+}
+
+header {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+    padding: 4rem 2rem;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.header-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    color: #2dd4bf;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+    color: #94a3b8;
+}
+
+.contact-links a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    background: rgba(45, 212, 191, 0.1);
+    transition: all 0.3s ease;
+}
+
+.contact-links a:hover {
+    background: rgba(45, 212, 191, 0.2);
+    color: #2dd4bf;
+    transform: translateY(-2px);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    background: rgba(30, 41, 59, 0.7);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(45, 212, 191, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(45, 212, 191, 0.15);
+}
+
+h2 {
+    color: #2dd4bf;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #2dd4bf;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.skill-category {
+    background: rgba(45, 212, 191, 0.05);
+    padding: 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+    background: rgba(45, 212, 191, 0.1);
+}
+
+.skill-category h3 {
+    color: #2dd4bf;
+    margin-bottom: 0.5rem;
+}
+
+.job {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: rgba(30, 41, 59, 0.9);
+    border-radius: 8px;
+}
+
+.job h3 {
+    color: #2dd4bf;
+    margin-bottom: 0.5rem;
+}
+
+.details {
+    color: #94a3b8;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+ul {
+    list-style: none;
+    margin-left: 1.5rem;
+}
+
+ul li {
+    position: relative;
+    margin-bottom: 0.5rem;
+    color: #e0e0e0;
+}
+
+ul li:before {
+    content: "➤";
+    color: #2dd4bf;
+    position: absolute;
+    left: -1.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: #94a3b8;
+    background: rgba(30, 41, 59, 0.7);
+    border-top: 1px solid rgba(45, 212, 191, 0.1);
+}
