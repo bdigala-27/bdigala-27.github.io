@@ -258,3 +258,43 @@ li {
         padding: 20px;
     }
 }
+
+/* Card Hover Effects */
+.skill-card,
+.job,
+.education-item,
+.cert-list li {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover,
+.job:hover,
+.education-item:hover,
+.cert-list li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Timeline Jobs as Cards */
+.job {
+    margin-bottom: 30px;
+}
+
+/* Education Card */
+.education-item {
+    margin-bottom: 20px;
+}
+
+/* Certifications List */
+.cert-list {
+    list-style: none;
+    padding: 0;
+}
+
+.cert-list li {
+    margin: 15px 0;
+}
